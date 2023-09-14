@@ -7,6 +7,21 @@ public class Questions {
     private String option3;
     private String option4;
 
+    public Questions(int id, String question, String answer, String option1, String option2, String option3,
+            String option4) {
+        this.id = id;
+        this.question = question;
+        this.answer = answer;
+        this.option1 = option1;
+        this.option2 = option2;
+        this.option3 = option3;
+        this.option4 = option4;
+    }
+    @Override
+    public String toString() {
+        return "Questions [id=" + id + ", question=" + question + ", answer=" + answer + ", option1=" + option1
+                + ", option2=" + option2 + ", option3=" + option3 + ", option4=" + option4 + "]";
+    }
     public int getId() {
         return id;
     }
